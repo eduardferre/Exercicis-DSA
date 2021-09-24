@@ -14,7 +14,7 @@ public class GestorFiguras {
         return res;
     }
 
-    public static void Sort (Figura[] figuras, Figura[] lista) {
+    /*public static void Sort (Figura[] figuras, Figura[] lista) {
         double res;
         int num;
         int i = 0;
@@ -33,6 +33,10 @@ public class GestorFiguras {
             lista[num] = figuras[i];
             i++;
         }
+    }*/
+
+    public static void sort(Figura[] v) {
+        Arrays.sort(v);
     }
 
     public static void main(String[] args) {
@@ -41,17 +45,22 @@ public class GestorFiguras {
         Rectangle r = new Rectangle(67 , 5);
         Quadrat q = new Quadrat(6);
         Figura [] figuras = new Figura[4];
-        Figura [] lista = new Figura[figuras.length];
         figuras[0] = q;
         figuras[1] = r;
         figuras[2] = t;
         figuras[3] = c;
 
         System.out.println("Suma de las áreas: " + GestorFiguras.suma(figuras));
-        GestorFiguras.Sort(figuras, lista);
-        System.out.println("Lista de Figuras (ordenadas en orden descendente):");
+        System.out.println("Lista de Figuras (sin ordenar):");
 
-        for (Figura f : lista) {
+        for (Figura f : figuras) {
+            System.out.println(f.area());
+        }
+
+        GestorFiguras.sort(figuras);
+        System.out.println("Lista de Figuras (ordenadas en orden ascendente):");
+
+        for (Figura f : figuras) {
             System.out.println(f.area());
         }
     }
