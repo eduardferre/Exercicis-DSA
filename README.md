@@ -1,7 +1,16 @@
 ## Exercicis-DSA ##
 
 ## REPTE 1
-Polimorfismes => Individualment
+Polimorfismes
 
 ## REPTE 2
 Estructures de Dades
+
+## REPTE 3
+Lectura fitxer properties + caché
+
+## MÍNIM 1
+Avanç del primer mínim a resoldre
+
+## REPTE 4 (pending to upload)
+Calculadora Android Studio
