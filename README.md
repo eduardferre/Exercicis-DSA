@@ -12,5 +12,5 @@ Lectura fitxer properties + caché
 ## MÍNIM 1
 Avanç del primer mínim a resoldre
 
-## REPTE 4 (pending to upload)
+## REPTE 4
 Calculadora Android Studio
